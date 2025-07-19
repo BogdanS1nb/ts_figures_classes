@@ -72,7 +72,8 @@ export class Rectangle implements Figure {
     if (width <= 0 || height <= 0) {
       throw new Error('Width and height must be positive');
     }
-
+    this.width = width;
+    this.height = height;
     this.shape = 'rectangle';
   }
 
